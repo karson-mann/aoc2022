@@ -37,7 +37,7 @@ public class Day04 {
             int b = Integer.parseInt(sect1[1]);
             int c = Integer.parseInt(sect2[0]);
             int d = Integer.parseInt(sect2[1]);
-            if(c<=a&&b<=d||a<=c&&d<=b){
+            if(a<=c&&c<=b||c<=b&&b<=d){
                 count++;
             }
         }
@@ -46,7 +46,7 @@ public class Day04 {
 
     public static void main(String...args) {
         try {
-            part1();
+            part2();
         } catch (Exception e) {
             System.out.println(e);
         }
